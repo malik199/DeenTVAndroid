@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DEEN TV</title>
+<meta name="author" content="Malik Ahmad">
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Milonga">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.0.min.js"></script>
+</head>
+
+<body id="ipad">
+<!--<div data-role="header"><a href="#home" data-icon="home" class="ui-btn-right">HOME</a>
+		<h1>DEEN.TV</h1>
+	</div>--> 
+
+<!-- Start of home page -->
+<div data-role="page" id="home">
+  <div role="main" class="ui-content">
+    <div id="logo_video">
+      <div class="logo"> <img src="img/DEENTVlogo2.png"></div>
+      <div class="video-container"><!--14351001-old 15274797-new-->
+        <iframe id="UstreamIframe" src="http://www.ustream.tv/embed/15274797?ub=85a901&amp;lc=85a901&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=transparent" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="scroller">
+        <ul data-role="listview" data-inset="true" id="videos">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#schedule" data-icon="calendar" data-theme="b">Schedule</a></li>
+        <li><a href="#about" data-icon="info" data-theme="b">About</a></li>
+        <li><a href="#" class="refresh" data-icon="refresh" data-theme="b">Refresh</a></li>
+        <li><a href="#refresh" data-icon="home" data-theme="b">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page --> 
+
+<!-- Start of schedule page -->
+<div data-role="page" id="schedule">
+<div role="main" class="ui-content">
+  <div id="schedule_content">
+    <div class="scroller"></div>
+  </div>
+  <!-- footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#schedule" data-icon="calendar" data-theme="b">Schedule</a></li>
+        <li><a href="#about" data-icon="info" data-theme="b">About</a></li>
+        <li><a href="#" class="refresh" data-icon="refresh" data-theme="b">Refresh</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer --> 
+</div>
+</div>
+<!-- /page --> 
+
+<!-- Start of watch video page -->
+<div data-role="page" id="watch">
+  <div role="main" class="ui-content">
+  
+      <div class="logo"> <img id="logo1" src="img/DEENTVlogo2.png"></div>
+      
+    <div class="video-container" id="youtube_wrapper"><iframe id="youtubeiframe" src="http://www.youtube.com/embed/pvq_RgK20wk?modestbranding=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h2 id="yt_h2">An Error Occurred</h2>
+    <h3 id="yt_h3">Please contact <a href="mailto:info@deen.tv">info@deen.tv</a></h3>
+    <div id="yt_desc"></div>
+  </div>
+</div>
+<!-- /page --> 
+
+<!-- Start of update video page -->
+<div data-role="page" id="updates" >
+  <div role="main" class="ui-content"> UPDATES - UPDATES - UPDATES - UPDATES - UPDATES - UPDATES - UPDATES - UPDATES - </div>
+  <!-- footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#schedule" data-icon="calendar" data-theme="b">Schedule</a></li>
+        <li><a href="#about" data-icon="info" data-theme="b">About</a></li>
+        <li><a href="#" class="refresh" data-icon="refresh" data-theme="b">Refresh</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page --> 
+
+<!-- Start of about video page -->
+<div data-role="page" id="about" >
+  <div role="main" class="ui-content"><div class="logo"> <img src="img/DEENTVlogo2.png"></div>
+      <div id="about-content">
+          <img class="about_img" width="100%" src="img/DEENTV-postcard-back.jpg" />
+          <p>Native Deen's DeenTV is the first 24/7 online halal entertainment channel. DeenTV airs the most popular halal videos from around the world. DeenTV is currently producing reality shows, documentaries, comedy and music videos that are focused on stories of Muslims living in modern society. For more information or to get involved, contact us at <a href="mailto:info@deen.tv">info@deen.tv</a></p>
+          <ul style="display:none">
+              <li>To provide a 24/7 linear video channel with halal entertainment available worldwide via the internet.</li>
+              <li>To develop socially conscious programming acceptable by people of faith with the goal of creating a better world for humanity.</li>
+              <li>To provide a channel for professional, semi-professional and experienced amateur video producers to showcase their work on maintain belief in God while living in the West.</li>
+              <li>To allow Muslim actors, journalists, writers, etc. to develop their talents in a wholesome manner.</li>
+          </ul>
+      </div>
+  
+  </div>
+  <!-- footer -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#schedule" data-icon="calendar" data-theme="b">Schedule</a></li>
+        <li><a href="#about" data-icon="info" data-theme="b">About</a></li>
+        <li><a href="#" class="refresh" data-icon="refresh" data-theme="b">Refresh</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page --> 
+
+<script type="text/javascript" src="cordova.js"></script> 
+<script type="text/javascript" src="js/iscroll.js"></script> 
+<script type="text/javascript" src="js/ustream-embedapi.js"></script>
+<script type="text/javascript" src="js/deentv.js"></script>
+
+<script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>
